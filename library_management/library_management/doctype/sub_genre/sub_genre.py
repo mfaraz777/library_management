@@ -1,5 +1,6 @@
 # Copyright (c) 2025, Mujahid_Faraz and contributors
 # For license information, please see license.txt
+# pyright: reportAttributeAccessIssue=false
 
 # import frappe
 from frappe.model.document import Document
