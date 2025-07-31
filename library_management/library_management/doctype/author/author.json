@@ -1,25 +1,96 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:AUTHOR-{###}",
  "creation": "2025-07-15 02:55:06.488594",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "section_break_2kpi"
+  "author_name",
+  "date_of_birth",
+  "nationality",
+  "column_break_yufe",
+  "pen_name",
+  "is_dead",
+  "date_of_death",
+  "section_break_ssnn",
+  "author_description",
+  "section_break_jggi",
+  "author_image",
+  "website"
  ],
  "fields": [
   {
-   "fieldname": "section_break_2kpi",
+   "fieldname": "author_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Author Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of Birth"
+  },
+  {
+   "fieldname": "nationality",
+   "fieldtype": "Data",
+   "label": "Nationality",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_ssnn",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "author_description",
+   "fieldtype": "Text",
+   "label": "Author Description"
+  },
+  {
+   "fieldname": "section_break_jggi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "author_image",
+   "fieldtype": "Attach Image",
+   "label": "Author Image"
+  },
+  {
+   "fieldname": "website",
+   "fieldtype": "Data",
+   "label": "Website"
+  },
+  {
+   "fieldname": "pen_name",
+   "fieldtype": "Data",
+   "label": "Pen Name"
+  },
+  {
+   "fieldname": "column_break_yufe",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_dead",
+   "fieldtype": "Check",
+   "label": "Is Dead"
+  },
+  {
+   "fieldname": "date_of_death",
+   "fieldtype": "Date",
+   "label": "Date of Death"
   }
  ],
  "grid_page_length": 50,
+ "image_field": "author_image",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-15 02:55:06.488594",
+ "modified": "2025-07-18 00:18:47.383311",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Author",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
@@ -36,7 +107,11 @@
   }
  ],
  "row_format": "Dynamic",
+ "search_fields": "author_name",
+ "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "author_name",
+ "track_changes": 1
 }
